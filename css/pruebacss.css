@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,600;0,700;1,600&family=Mochiy+Pop+P+One&family=Roboto:ital,wght@0,900;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+/*" BODY "*/
+body {
+  background-image: url(../imagenes/fondo-pagina.jpg); }
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 20px;
+  font-family: "Roboto", sans-serif; }
+
+/*" CABECERA "*/
+.logo-portada {
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+  padding: 10px;
+  transform: translateY(10px);
+  animation: bouncel 1s alternate infinite ease-in; }
+
+@keyframes bouncel {
+  0% {
+    transform: translateX(20%);
+    transform: translatey(20%); } }
+
+.cabecera {
+  display: flex;
+  text-align: center;
+  align-items: center; }
+
+.reglamento {
+  transform: translate(240px, 20px); }
+  .reglamento a {
+    font-size: 15px;
+    background-color: #21366f;
+    padding: 16px;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none; }
+
+.entradas {
+  transform: translate(-240px, 20px); }
+  .entradas a {
+    font-size: 15px;
+    background-color: #21366f;
+    padding: 16px;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none; }
+
+/*" MENU "*/
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: "Roboto", sans-serif; }
+
+.nav-item {
+  font-size: 38px;
+  padding: 5px;
+  font-size: 24px; }
+
+nav {
+  background-color: #21366f; }
+
+/*" INICIO "*/
+.noticia {
+  width: 90%;
+  margin: 0 auto; }
+
+.row {
+  padding: 10px; }
+
+/*" PAGINAS SECUNDARIAS "*/
+.imagen-sanyo-y-tapia {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; }
+
+.mt-0 {
+  font-size: 36px; }
+
+.titulo-0 {
+  padding-left: 5%; }
+
+.texto-0 {
+  padding-left: 8%;
+  padding-right: 8%;
+  line-height: 2em;
+  font-size: 20px; }
+
+.noticia-0 {
+  margin-top: 20px; }
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  color: red; }
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  width: 90%; }
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  color: #5e5e61; }
+
+/*" TORNEOS "*/
+.torneo {
+  background: #21366f;
+  color: #555555;
+  font-size: 15px; }
+
+.imagentorneo {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  width: 100%;
+  margin: 20px auto; }
+
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap; }
+  .cards_wrap .card_item {
+    width: 25%;
+    padding: 10px; }
+  .cards_wrap .card_inner {
+    background: white; }
+  .cards_wrap .card_top {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 0; }
+  .cards_wrap .card_bottom {
+    padding: 15px;
+    text-align: center; }
+    .cards_wrap .card_bottom .card_category {
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Roboto", sans-serif; }
+    .cards_wrap .card_bottom .card_info {
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px dashed black;
+      font-family: "Roboto", sans-serif; }
+      .cards_wrap .card_bottom .card_info .title {
+        color: #21366f;
+        font-size: 20px;
+        margin-bottom: 5px;
+        font-family: "Roboto", sans-serif; }
+    .cards_wrap .card_bottom .card_creator {
+      text-align: center; }
+    .cards_wrap .card_bottom a {
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      color: black; }
+
+/*" RANKING "*/
+.table {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px; }
+
+.contenedor-masculino {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  margin-top: 20px; }
+
+.ranking {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+  background-color: white; }
+  .ranking:hover {
+    box-shadow: 0 5px 15px rgba(3, 89, 92, 0.5);
+    transform: translateY(-15px); }
+  .ranking .head {
+    height: 125px;
+    width: 100%;
+    position: relative; }
+    .ranking .head .circle {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: #21366f;
+      bottom: 0; }
+    .ranking .head .foto-jugador {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      border-radius: 50%;
+      bottom: -30%;
+      left: 50%;
+      transform: translate(-50%); }
+      .ranking .head .foto-jugador img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; }
+  .ranking .description {
+    height: 200px;
+    padding: 10px;
+    border-bottom: solid 1px rgba(6, 74, 76, 0.18);
+    text-align: center; }
+    .ranking .description h3 {
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      transform: translateY(10px); }
+    .ranking .description h4 {
+      color: #21366f;
+      font-family: 'Roboto', sans-serif;
+      font-size: 30px;
+      transform: translateY(6px); }
+    .ranking .description h5 {
+      font-size: 36px;
+      margin: 0 auto;
+      transform: translateY(10px); }
+    .ranking .description p {
+      margin-top: 20px;
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif; }
+  .ranking .bandera {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+/*" FOTOS "*/
+.carusel {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
+/*" CALENDARIO "*/
+.imagen-calendario {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px; }
+
+.botones-calendario {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 20%;
+  margin: 0 auto; }
+
+/*" CONTACTO "*/
+.mapa {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px; }
+
+.formulario {
+  height: 100%;
+  width: 100%; }
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px; }
+
+.container:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1; }
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #21366f;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19); }
+
+.left {
+  background: url("../imagenes/fondo-formulario.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%; }
+
+.right {
+  padding: 25px 40px; }
+
+.titulo-formulario {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  color: white; }
+
+.field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s; }
+  .field:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
+textarea {
+  min-height: 150px; }
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #21366f;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .3s; }
+
+.field:focus {
+  border: 2px solid #21366f;
+  background-color: white; }
+
+/*" VIDEOS YOUTUBE "*/
+.youtube {
+  width: auto;
+  background-color: #21366f;
+  margin: 0 auto;
+  padding: 30px; }
+
+.titulo-video-yotube {
+  text-align: center;
+  color: #69dfe1;
+  font-size: 20px; }
+
+.video-yotube {
+  width: auto;
+  text-align: center; }
+
+iframe {
+  width: 94%;
+  height: 400px; }
+
+/*" PATROCINADORES "*/
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  padding: 30px; }
+
+.patrocinadores, .marcas, .patro {
+  background-color: #21366f; }
+
+.marcas {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center; }
+
+.patro {
+  margin: 50px; }
+
+/*" FOOTER "*/
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+  margin-top: 20px; }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+    .pie-pagina .grupo-1 .box figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie-pagina .grupo-1 .box figure img {
+        width: 80%; }
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+  margin-top: 20px; }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+    .pie-pagina .grupo-1 .box h2 {
+      color: white;
+      margin-bottom: 25px;
+      font-size: 20px; }
+    .pie-pagina .grupo-1 p {
+      color: white;
+      margin-bottom: 10px; }
+    .pie-pagina .grupo-1 a {
+      list-style: none;
+      text-decoration: none; }
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+  background-color: black;
+  text-align: center;
+  transition: all 300ms ease; }
+
+.pie-pagina .grupo-2 {
+  background-color: #21366f;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff; }
+  .pie-pagina .grupo-2 small {
+    font-size: 15px; }
+
+.pie-pagina .grupo-1 .red-social .fa-facebook:hover {
+  color: #0000ff; }
+
+.pie-pagina .grupo-1 .red-social .fa-instagram:hover {
+  color: #cb01e6; }
+
+.pie-pagina .grupo-1 .red-social .fa-twitter:hover {
+  color: #00ccff; }
+
+.pie-pagina .grupo-1 .red-social .fa-youtube:hover {
+  color: #ff0000; }
+
+/*" MEDIAQUERIES "*/
+@media (max-width: 246px) {
+  .logo-portada {
+    display: none; } }
+
+@media (max-width: 760px) {
+  .table {
+    display: none; } }
+
+@media (max-width: 1989px) {
+  .contenedor-masculino {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; } }
+
+@media (max-width: 450px) {
+  .youtube {
+    display: none; } }
+
+@media (max-width: 350px) {
+  .mt-0 {
+    display: none; } }
+
+@media (max-width: 350px) {
+  .contenedor-patrocinadores h3 {
+    display: none; } }
+
+@media (max-width: 773px) {
+  .contenedor-patrocinadores .patrocinadores .marcas, .contenedor-patrocinadores .marcas .marcas, .contenedor-patrocinadores .patro .marcas {
+    text-align: center; } }
+
+@media (max-width: 773px) {
+  .adidas-joma img {
+    width: 40%;
+    margin: 20px; } }
+
+@media (max-width: 773px) {
+  .head1-quilmes img {
+    width: 40%;
+    margin: 20px; } }
+
+@media (max-width: 773px) {
+  .bullpadel-cocacola img {
+    width: 40%;
+    margin: 20px; } }
+
+@media (max-width: 240px) {
+  .contenedor-patrocinadores .patrocinadores .marcas, .contenedor-patrocinadores .marcas .marcas, .contenedor-patrocinadores .patro .marcas {
+    display: none; } }
+
+@media (max-width: 1024px) {
+  .cards_wrap .card_item {
+    width: 33.3%; } }
+
+@media (max-width: 768px) {
+  .cards_wrap .card_item {
+    width: 50%; } }
+
+@media (max-width: 528px) {
+  .cards_wrap .card_item {
+    width: 100%; } }
+
+@media (max-width: 480px) {
+  form {
+    width: 96%; } }
+
+@media (max-width: 1000px) {
+  .reglamento {
+    display: none; } }
+
+@media (max-width: 1000px) {
+  .entradas {
+    display: none; } }
+
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr; }
+  .left {
+    height: 200px; } }
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media (max-width: 370px) {
+  .iconos-redes img {
+    width: 50%;
+    align-items: center;
+    text-align: center; } }
+
+@media (max-width: 290px) {
+  .logo-formulario {
+    display: none; } }
+
+@media (max-width: 1000px) {
+  .imagen-calendario {
+    width: 90%; } }
+
+@media (max-width: 1000px) {
+  .carusel {
+    width: 90%; } }
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
+
+@media (max-width: 247px) {
+  h1 {
+    font-size: 15px; } }
+
+@media (max-width: 390px) {
+  .botones-calendario {
+    display: none; } }

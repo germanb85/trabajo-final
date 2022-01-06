@@ -1,0 +1,26 @@
+/*" PATROCINADORES "*/
+
+h3{
+    text-align: center;
+    font-size: $size2;
+    font-family: $fuente-primaria;
+    padding: 30px;
+  }
+  
+  .patrocinadores{
+    background-color: $color-primario;
+  }
+
+  .marcas{
+    @extend .patrocinadores;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+
+  .patro{
+    @extend .patrocinadores;
+    margin: 50px;
+  }

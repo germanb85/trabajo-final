@@ -1,0 +1,24 @@
+/*" VIDEOS YOUTUBE "*/
+
+.youtube{
+    width: auto;
+    background-color: $color-primario;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .titulo-video-yotube{
+    text-align: center;
+    color: $color-secundario;
+    font-size: $size5;
+  }
+    
+    .video-yotube{
+      width: auto;
+      text-align: center;
+    }
+  
+    iframe{
+      width: 94%;
+      height: 400px;
+    }

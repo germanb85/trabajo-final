@@ -1,0 +1,49 @@
+/*" CABECERA "*/
+
+.logo-portada{
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 10px;
+    transform: translateY(10px);
+    animation: bouncel 1s alternate infinite ease-in;
+      @keyframes bouncel{
+        0%{
+          transform: translateX(20%);
+          transform: translatey(20%);
+        }
+      }
+}
+  .cabecera{
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .reglamento{
+    transform: translate(240px, 20px);
+    a{
+        font-size: $size8;
+        background-color: $color-primario;
+        padding: 16px;
+        border-radius: 6px;
+        font-family: $fuente-primaria;
+        color: $color-alpha;
+        text-decoration: none;
+      }
+  }
+  
+  .entradas{
+    transform: translate(-240px, 20px);
+    a{
+        font-size: $size8;
+        background-color: $color-primario;
+        padding: 16px;
+        border-radius: 6px;
+        font-family: $fuente-primaria;
+        color: $color-alpha;
+        text-decoration: none;
+      }
+  }
+  

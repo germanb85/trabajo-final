@@ -1,0 +1,67 @@
+/*" TORNEOS "*/
+
+.torneo{
+    background: $color-primario;
+    color: rgb(85, 85, 85);
+    font-size: $size8;
+  }
+  
+  .imagentorneo{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wrapper {
+    width: 100%;
+    margin: 20px auto;
+  }
+  
+  .cards_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .card_item {
+      width: 25%;
+      padding: 10px;
+    }
+    .card_inner {
+      background: $color-alpha;
+    }
+    .card_top {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      padding-bottom: 0;
+    }
+    .card_bottom {
+      padding: 15px;
+      text-align: center;
+
+      .card_category {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $fuente-primaria;
+      }
+      .card_info {
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px dashed $color-beta;
+        font-family: $fuente-primaria;
+        .title {
+          color: $color-primario;
+          font-size: $size5;
+          margin-bottom: 5px;
+          font-family: $fuente-primaria;
+        }
+      }
+      .card_creator {
+        text-align: center;
+      }
+      a{
+        text-decoration: none;
+        font-family: $fuente-primaria;
+        color: $color-beta;
+      }
+    }
+  }
+  

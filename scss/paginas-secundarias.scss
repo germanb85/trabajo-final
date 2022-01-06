@@ -1,0 +1,45 @@
+/*" PAGINAS SECUNDARIAS "*/
+
+.imagen-sanyo-y-tapia{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+.mt-0{
+    font-size: $size1;
+}
+
+.titulo-0{
+    padding-left: 5%;
+}
+  
+.texto-0{
+    padding-left: 8%;
+    padding-right: 8%;
+    line-height: 2em;
+    font-size: $size5;
+}
+
+.noticia-0{
+    margin-top: 20px;
+  }
+
+h4{
+    font-family: $fuente-primaria;
+    color: red;
+}  
+
+h5{
+    font-family: $fuente-primaria;
+    font-size: $size;
+    width: 90%;
+}
+
+h6{
+    font-family: $fuente-primaria;
+    font-size: $size4;
+    color: rgb(94, 94, 97);
+}
+

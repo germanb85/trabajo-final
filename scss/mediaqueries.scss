@@ -1,0 +1,170 @@
+/*" MEDIAQUERIES "*/
+
+@media (max-width: 246px){
+    .logo-portada{
+      display: none;
+    }
+  }
+
+  @media (max-width: 760px){
+    .table{
+      display: none;
+    }
+  }
+
+  @media (max-width: 1989px){
+    .contenedor-masculino{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 450px){
+    .youtube{
+        display: none;
+    }
+}
+
+@media (max-width: 350px){
+  .mt-0{
+    display: none;
+  }
+}
+
+@media (max-width: 350px){
+  .contenedor-patrocinadores h3{
+    display: none;
+  }
+}
+
+@media (max-width: 773px){
+    .contenedor-patrocinadores .patrocinadores .marcas{
+      text-align: center;   
+  }
+}
+
+@media (max-width: 773px){
+  .adidas-joma img{
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 773px){
+  .head1-quilmes img{
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 773px){
+  .bullpadel-cocacola img{
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 240px){
+  .contenedor-patrocinadores .patrocinadores .marcas{
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards_wrap .card_item {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards_wrap .card_item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 528px) {
+  .cards_wrap .card_item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px){
+  form{
+      width: 96%;
+  }
+}
+
+@media (max-width: 1000px){
+  .reglamento {
+      display: none;
+  }
+}
+
+@media (max-width: 1000px){  
+  .entradas {
+      display: none;
+  }                           
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+@media (max-width: 768px){  
+  .container {
+      padding-left: 10px;
+      padding-right: 10px;
+  }                           
+}
+
+@media (max-width: 370px){
+  .iconos-redes img{
+    width: 50%;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 290px){
+  .logo-formulario{
+    display: none; 
+  }
+}
+
+@media (max-width: 1000px){
+  .imagen-calendario{
+    width: 90%; 
+  }
+}
+
+@media (max-width: 1000px){
+  .carusel{
+    width: 90%; 
+  }
+}
+
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+}
+
+@media (max-width: 247px){
+  h1{
+    font-size: $size8;
+  }
+}
+
+@media (max-width: 390px){
+  .botones-calendario{
+    display: none;
+  }
+}
