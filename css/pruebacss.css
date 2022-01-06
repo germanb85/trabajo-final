@@ -191,6 +191,7 @@ h6 {
   border-radius: 10px;
   overflow: hidden;
   transition: .5s;
+  margin: 15px 20px;
   background-color: white; }
   .ranking:hover {
     box-shadow: 0 5px 15px rgba(3, 89, 92, 0.5);
